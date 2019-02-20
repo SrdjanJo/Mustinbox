@@ -1,0 +1,76 @@
+@media screen and ( max-width: 450px )
+{
+	#composeModal .modal-body, #composeModal .modal-footer
+	{
+		padding: 5px 10px;
+	}
+	
+	#composeModal .form-group
+	{
+		padding-top: 0.6rem;
+	}
+	
+	#composeModal textarea
+	{
+		min-height: 90px;
+	}
+	
+	section[id] .form-wrapper 
+	{
+		padding: 2.2rem !important;
+	}
+}
+
+@media screen and ( max-width: 500px )
+{
+	#read-mail .form-group
+	{
+		padding-left: 0;
+	}
+	
+	#read-mail .avatar
+	{
+		display: none;
+	}
+	
+	.thread .btn-icon
+	{
+		padding: 0 0.8rem;
+	}
+	
+	#mail .toolbar
+	{
+		max-height: 5rem;
+		min-height: 5rem;
+	}
+	
+	#mail .page-header
+	{
+		height: 6.6rem;
+		min-height: 6.6rem;
+		max-height: 6.6rem;
+	}
+	
+	#mail .search-bar .sidebar-toggle-button, #mail .search-bar, #mail .search-bar .search-bar-input
+	{
+		height: 4.6rem;
+	}
+	
+	#mail .search-bar .sidebar-toggle-button
+	{
+		width: 4.6rem;
+	}
+	
+	.action-buttons .row
+	{
+		display: none;
+	}
+}
+
+@media screen and ( max-width: 650px )
+{
+	/* .action-buttons .row
+	{
+		display: none;
+	} */
+}
