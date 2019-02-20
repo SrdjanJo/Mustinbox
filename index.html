@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Mustinbox</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" /> 
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700italic,700,900,900italic" rel="stylesheet">
+
+    <!-- STYLESHEETS -->
+    <style type="text/css">
+            [fuse-cloak],
+            .fuse-cloak {
+                display: none !important;
+            }
+	</style>
+
+    <!-- Icons.css -->
+    <link type="text/css" rel="stylesheet" href="assets/icons/fuse-icon-font/style.css">
+    <!-- Animate.css -->
+    <link type="text/css" rel="stylesheet" href="assets/node_modules/animate.css/animate.min.css">
+    <!-- PNotify -->
+    <link type="text/css" rel="stylesheet" href="assets/node_modules/pnotify/dist/PNotifyBrightTheme.css">
+    <!-- Nvd3 - D3 Charts -->
+    <link type="text/css" rel="stylesheet" href="assets/node_modules/nvd3/build/nv.d3.min.css" />
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" rel="stylesheet" href="assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css" />
+    <!-- Fuse Html -->
+    <link type="text/css" rel="stylesheet" href="assets/fuse-html/fuse-html.min.css" />
+    <!-- Main CSS -->
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/custom.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/media.css">
+    <!-- / STYLESHEETS -->
+
+    <!-- JAVASCRIPT -->
+    <!-- jQuery -->
+    <script type="text/javascript" src="assets/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Mobile Detect -->
+    <script type="text/javascript" src="assets/node_modules/mobile-detect/mobile-detect.min.js"></script>
+    <!-- Perfect Scrollbar -->
+    <script type="text/javascript" src="assets/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <!-- Popper.js -->
+    <script type="text/javascript" src="assets/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Nvd3 - D3 Charts -->
+    <script type="text/javascript" src="assets/node_modules/d3/d3.min.js"></script>
+    <script type="text/javascript" src="assets/node_modules/nvd3/build/nv.d3.min.js"></script>
+    <!-- Data tables -->
+    <script type="text/javascript" src="assets/node_modules/datatables.net/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="assets/node_modules/datatables-responsive/js/dataTables.responsive.js"></script>
+    <!-- PNotify -->
+    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotify.js"></script>
+    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyStyleMaterial.js"></script>
+    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyButtons.js"></script>
+    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyCallbacks.js"></script>
+    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyMobile.js"></script>
+    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyHistory.js"></script>
+    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyDesktop.js"></script>
+    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyConfirm.js"></script>
+    <script type="text/javascript" src="assets/node_modules/pnotify/dist/iife/PNotifyReference.js"></script> 
+    <!-- Fuse Html -->
+    <script type="text/javascript" src="assets/fuse-html/fuse-html.min.js"></script>
+    <!-- / JAVASCRIPT -->
+	
+	<!-- quill js-->
+	<link rel="stylesheet" href="assets/node_modules/quill/quill.snow.css">
+	<script src="assets/node_modules/quill/quill.min.js"></script>
+	<!-- quill js-->
+</head>
+
+<body class="layout layout-vertical layout-left-navigation layout-above-toolbar layout-above-footer">
+    <main>
+        <div id="wrapper">
+            <div class="content-wrapper">
+                <div class="content custom-scrollbar bigg-scrollbar">
+
+					<!-- LOGIN PAGE-->
+                    <section id="login">
+                        <div class="form-wrapper md-elevation-8 p-8">
+
+                            <div class="logo bg-secondary">
+                                <span>M</span>
+                            </div>
+
+                            <div class="title mt-4 mb-8">Sign into your account</div>
+
+                            <form name="loginForm">
+
+                                <div class="form-group mb-4">
+                                    <input type="email" class="form-control" data-validate="email" value="r@mustinbox.com" id="loginFormInputEmail" aria-describedby="emailHelp" placeholder=" " />
+                                    <label for="loginFormInputEmail">Email address </label>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <input type="password" class="form-control" data-validate="password" value="Shs9s8@4" id="loginFormInputPassword" placeholder="" />
+                                    <label for="loginFormInputPassword">Password</label>
+                                </div>
+
+                                <div class="remember-forgot-password row no-gutters align-items-center justify-content-between pt-4">
+
+                                    <div class="form-check remember-me mb-4">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input remember_me" aria-label="Remember Me" />
+                                            <i class="checkbox-icon-custom"></i>
+                                            <span class="form-check-description">Remember Me</span>
+                                        </label>
+                                    </div>
+
+                                    <a href="#" class="forgot-password text-secondary mb-4" data-target_id="forgot-password" >Forgot Password?</a>
+                                </div>
+
+                                <button type="button" id="sign_in" class="submit-button btn-custom btn-block btn-secondary my-4 mx-auto" aria-label="LOG IN">
+                                    SIGN IN
+                                </button>
+                            </form>
+
+                            <!--<div class="separator">
+                                <span class="text">OR</span>
+                            </div>
+
+                            <button type="submit" class="google btn btn-block btn-secondary my-2 mx-auto" aria-label="LOG IN">
+                                <span>
+                                    <i class="icon-google-plus s-4"></i>
+                                    <span>Sign in with Google</span>
+                                </span>
+                            </button>
+
+                            <button type="submit" data-target_id="lock-screen" class="facebook btn btn-block btn-secondary my-2 mx-auto" aria-label="LOG IN">
+                                <span>
+                                    <i class="icon-facebook-box s-4"></i>
+                                    <span>Log in with Facebook</span>
+                                </span>
+                            </button>-->
+
+                           <!--  <div class="register">
+                                <span class="text">Don't have an account?</span><a class="link text-secondary" data-target_id="register" href="javascript: void 0">Create an account</a>
+                            </div> -->
+
+                        </div>
+                    </section>
+					<!-- LOGIN PAGE-->
+					
+					
+					<!-- REGISTER PAGE-->
+					<section id="register">
+                        <div class="form-wrapper md-elevation-8 p-8">
+                            <div class="logo bg-secondary">
+                                <span>F</span>
+                            </div>
+                            <div class="title mt-4 mb-8">Create an account</div>
+                            <form name="registerForm" >
+                                <div class="form-group mb-4">
+                                    <input type="text" class="form-control" data-validate="name" id="registerFormInputName" aria-describedby="nameHelp" />
+                                    <label for="registerFormInputName">Name</label>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input type="email" class="form-control" data-validate="email" id="registerFormInputEmail" aria-describedby="emailHelp" />
+                                    <label for="registerFormInputEmail">Email address</label>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input type="password" class="form-control" data-validate="password" id="registerFormInputPassword" />
+                                    <label for="registerFormInputPassword">Password</label>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input type="password" class="form-control" data-validate="confirm-password" id="registerFormInputPasswordConfirm" />
+                                    <label for="registerFormInputPasswordConfirm">Password (Confirm)</label>
+                                </div>
+                                <div class="terms-conditions row align-items-center pt-4 mb-8">
+                                    <div class="form-check mr-1 mb-1">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" data-validate="checkbox" aria-label="Remember Me" />
+                                            <i class="checkbox-icon-custom"></i>
+                                            <span class="read_accept">I read and accept</span>
+                                        </label>
+                                    </div>
+                                    <a href="#" class="text-secondary mb-1">terms and conditions</a>
+                                </div>
+                                <button type="button" id="createAccount" class="submit-button btn btn-block btn-secondary my-4 mx-auto" aria-label="LOG IN">
+                                    CREATE MY ACCOUNT
+                                </button>
+                            </form>
+                            <div class="login">
+                                <span class="text mr-sm-2">Already have an account?</span>
+                                <a class="link text-secondary login_link" data-target_id="login" href="javascript: void 0">Sign in</a>
+                            </div>
+
+                        </div>
+                    </section>
+					<!-- REGISTER PAGE-->
+					
+					
+					<!-- FORGOT PASSWORD PAGE-->
+					<section id="forgot-password">
+                        <div class="form-wrapper md-elevation-8 p-8">
+                            <div class="logo bg-secondary">
+                                <span>F</span>
+                            </div>
+                            <div class="title mt-4 mb-8">Recover your password</div>
+                            <form name="forgotPasswordForm">
+                                <div class="form-group mb-4">
+                                    <input type="email" class="form-control" data-validate="email" id="forgotPasswordFormInputEmail" aria-describedby="emailHelp" placeholder=" " required/>
+                                    <label for="forgotPasswordFormInputEmail">Email address</label>
+                                </div>
+                                <button type="button" id="reset_link" class="submit-button btn btn-block btn-secondary mt-8 mb-4 mx-auto" aria-label="SEND RESET LINK">
+                                    RESET MY PASSWORD
+                                </button>
+                            </form>
+                            <div class="login row align-items-center justify-content-center mt-8 mb-6 mx-auto">
+                                <a class="link text-secondary" data-target_id="login" href="javascript: void 0">Go back to login</a>
+                            </div>
+                        </div>
+                    </section>
+					<!-- FORGOT PASSWORD PAGE-->
+					
+					
+					<!-- LOCK PAGE-->
+						<section id="lock-screen">
+							<div class="form-wrapper md-elevation-8 p-8">
+								<div class="mb-10">
+									<div class="avatar-container mb-sm-0">
+										<img class="avatar big" src="assets/images/avatars/katherine.jpg">
+										<i class="icon-lock text-danger s-9"></i>
+									</div><div class="col-sm pl-sm-5 text-sm-left locked_session">
+										<div class="title mb-2">Your session is locked</div>
+										<div class="subtitle">
+											Due to inactivity, your session is locked. Enter your password to continue.
+										</div>
+									</div>
+								</div>
+
+								<form name="lockForm">
+									<div class="form-group mb-4">
+										<input type="email" class="form-control" id="lockFormInputUsername" aria-describedby="username" placeholder=" " disabled value="Jane Doe" />
+									</div>
+									<div class="form-group mb-4">
+										<input type="email" class="form-control" id="lockFormInputEmail" data-validate="password" aria-describedby="emailHelp" placeholder=" " required/>
+										<label for="lockFormInputEmail">Password</label>
+									</div>
+									<button type="button" id="unlock_app" class="submit-button btn btn-block btn-secondary mt-8 mb-4 mx-auto" aria-label="SEND RESET LINK">
+										UNLOCK
+									</button>
+								</form>
+								<div class="message row align-items-center justify-content-center mt-8 mb-6 mx-auto">
+									<a data-target_id="login" class="link text-secondary" href="javascript: void 0">
+										Are you not</span>
+										<span> Jane Doe?</span>
+									</a>
+								</div>
+							</div>
+						</section>
+					<!-- LOCK PAGE-->
+					
+					
+					<!-- SPLASH SCREEN -->
+						<section id="splash-screen" class="active">
+							<div class="center">
+
+								<div class="logo bg-secondary">
+									<span>F</span>
+								</div>
+
+								<!-- Material Design Spinner -->
+								<div class="spinner-wrapper">
+									<div class="spinner">
+										<div class="inner">
+											<div class="gap"></div>
+											<div class="left">
+												<div class="half-circle"></div>
+											</div>
+											<div class="right">
+												<div class="half-circle"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- / Material Design Spinner -->
+
+							</div>
+						</section>
+					<!-- SPLASH SCREEN -->	
+					
+					
+					<!-- READ EMAIL -->
+						<section id="read-mail">
+							<div class="form-wrapper md-elevation-8 p-8">
+								<!-- CHAT TOOLBAR -->
+								<div class="toolbar row no-gutters align-items-center justify-content-between w-100 px-4">
+
+									<div class="col read-subject">
+										Subject of email lorem ipsum dolor sit
+									</div>
+								</div>
+								<div class="message-content">
+									<div class="name row no-gutters align-items-center read-from-to">
+										<div class="avatar mr-2">S</div>
+										<span class="names">Srdjan Jovicic</span>
+										<span class="mail">&ltsrdjan@gmail.com&gt to</span>
+										<span class="names">me</span>
+										<div class="abs-email-date">26 Jun ( 4 month ago)</div>
+									</div>
+									<div class="message-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</div>
+								</div>
+								<div class="mail-attachemnts">
+									<div class="att-title" >Attachments (0)</div>
+									<div class="attachemnt-items">
+										
+									</div>
+								</div>
+								<div id="richtextContainer">
+									
+								</div>
+								<div class="mail-reply">
+									<div class="form-group">
+										<div class="avatar mr-2">S</div>
+										<!-- <label for="message-text" class="form-control-label">Message:</label> -->
+										<!-- <textarea class="form-control" id="message-text" data-validate="message" data-validate_name="message"></textarea> -->
+										<div class="form-control readMailArea" id="message-text" data-validate="message" data-validate_name="message"></div>
+										<div class="bottom-textarea">
+											<button type="button" class="btn btn-secondary btn-block fuse-ripple-ready" id="reply-mail">SEND</button>
+											<span class="a-span">A</span>
+											<span class="sep-border"></span>
+											<i class="icon-paperclip has-attachment s-4"><input type="file" class="attachmentCompose"/></i>
+											<i class="icon-file-image-box has-attachment s-4"><input type="file" class="attachmentCompose"/></i>
+											<i class="icon-emoticon has-attachment s-4"></i>
+											
+											<i class="icon-trash has-attachment s-4 trash-can discardDraft"></i>
+											
+										</div>
+									</div>
+									<div class="attachList"></div>
+								</div>
+							</div>
+							
+						</section>
+					<!-- READ EMAIL -->
+					
+					
+					
+					
+					
+					<!-- MAIL PAGE -->
+					
+					<section id="mail" class="page-layout carded left-sidebar"> 
+
+                        <div class="top-bg bg-primary"></div>
+
+                        <aside class="page-sidebar" data-fuse-bar="mail-sidebar" data-fuse-bar-media-step="md">
+                            <!-- HEADER -->
+                            <div class="header d-flex flex-column justify-content-between p-6 light-fg">
+                                <div class="logo d-flex align-items-center pt-7">
+                                    <i class="icon-email mr-4"></i>
+                                    <span class="logo-text h4">Mustinbox</span>
+                                </div>
+                                <div class="account">
+                                    <div class="title info-name">Name</div>
+                                    <div class="title info-email">Email</div>
+                                </div>
+                            </div>
+                            <!-- / HEADER -->
+
+                            <div class="content custom-scrollbar">
+                                <div class="p-6">
+                                    <button type="button" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#composeModal">COMPOSE</button>
+                                </div>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item open">
+                                        <a class="nav-link ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+                                            <i class="icon s-4 icon-inbox"></i>
+                                            <span>Inbox</span>
+                                        </a>
+                                    </li>
+									<li class="nav-item">
+                                        <a class="nav-link ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+                                            <i class="icon s-4 icon-star"></i>
+                                            <span>Starred</span>
+                                        </a>
+                                    </li>
+									<!-- <li class="nav-item">
+                                        <a class="nav-link ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+                                            <i class="icon s-4 icon-label"></i>
+                                            <span>Important</span>
+                                        </a>
+                                    </li> -->
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+                                            <i class="icon s-4 icon-send"></i>
+                                            <span>Sent</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+                                            <i class="icon s-4 icon-email-open"></i>
+                                            <span>Drafts</span>
+                                        </a>
+                                    </li>
+									<li class="nav-item">
+                                        <a class="nav-link ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+                                            <i class="icon s-4 icon-alert-octagon"></i>
+                                            <span>Spam</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+                                            <i class="icon s-4 icon-delete"></i>
+                                            <span>Trash</span>
+                                        </a>
+                                    </li>
+									<div class="customBoxes">
+										
+									</div>
+									<li class="nav-item newBox border-grey" data-toggle="modal" data-target="#newBoxModal">
+										<a class="nav-link no-refresh ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+											<i class="icon s-4 icon-plus-circle-outline"></i>
+											<span>Create new</span>
+										</a>
+									</li>
+                                    <li class="subheader">
+                                        Labels
+                                    </li>
+									<div class="border-grey">
+										<div class="allMenuLabels"></div>
+										
+										<li class="nav-item newLabel" data-toggle="modal" data-target="#newLabelModal">
+											<a class="nav-link no-refresh ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+												<i class="icon s-4 icon-plus-circle-outline"></i>
+												<span>Create new</span>
+											</a>
+										</li>
+									</div>
+									<li class="nav-item" data-target_id="contacts" >
+                                        <a class="nav-link no-refresh ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+                                            <i class="icon s-4 icon-help-circle"></i>
+                                            <span>Contacts</span>
+                                        </a>
+                                    </li>
+									<li class="nav-item logout settings-item">
+                                        <a class="nav-link no-refresh ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+                                            <i class="icon s-4 icon-settings"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+									<li class="nav-item help-item" >
+                                        <a class="nav-link no-refresh ripple" data-fuse-bar-toggle="mail-sidebar" href="#">
+                                            <i class="icon s-4 icon-help-circle"></i>
+                                            <span>Help</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+
+                        <div class="page-content-wrapper">
+
+                            <!-- HEADER -->
+                            <div class="page-header d-flex flex-column justify-content-center light-fg">
+
+                                <div class="search-bar row align-items-center no-gutters bg-white text-auto">
+
+                                    <button type="button" class="sidebar-toggle-button btn btn-icon d-block d-lg-none" data-fuse-bar-toggle="mail-sidebar">
+                                        <i class="icon icon-menu"></i>
+                                    </button>
+
+                                    <i class="icon-magnify s-6 mx-4"></i>
+
+                                    <input class="search-bar-input col" type="text" placeholder="Search for an e-mail or contact">
+
+                                </div>
+                            </div>
+                            <!-- / HEADER -->
+
+                            <div class="page-content-card">
+                                <!-- CONTENT -->
+                                <!-- CONTENT TOOLBAR -->
+                                <div class="toolbar row no-gutters align-items-center px-4 px-sm-6">
+
+                                    <div class="col">
+
+                                        <div class="row no-gutters align-items-center">
+
+                                            <div class="col-auto">
+
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="mark-all-mails" />
+                                                    <span class="custom-control-indicator"></span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="action-buttons col">
+                                                <div class="row no-gutters align-items-center flex-nowrap d-none d-xl-flex">
+
+                                                    <div class="divider-vertical"></div>
+
+                                                    <button type="button" class="btn btn-icon" aria-label="archive">
+                                                        <i class="icon icon-archive"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-icon" aria-label="spam">
+                                                        <i class="icon icon-alert-octagon"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-icon" aria-label="delete" data-toggle="modal" data-target="#deleteModal">
+                                                        <i class="icon icon-delete"></i>
+                                                    </button>
+
+                                                    <div class="divider-vertical"></div>
+
+                                                    <button type="button" class="btn btn-icon" aria-label="move to">
+                                                        <i class="icon icon-folder"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-icon labelButton" aria-label="labels">
+                                                        <i class="icon icon-label"></i>
+														<div id="labelContainer" class="">
+															<div class="titleLabel">
+																Label as:
+															</div>
+															<div class="labelSearch">
+																<input type="text" class="form-control" id="searchAllLabels">
+																<i class="icon-magnify s-6 mx-4"></i>
+															</div>
+															<div class="fourLabels">
+															</div>
+															<div class="labelCreate" data-toggle="modal" data-target="#newLabelModal">
+																Create new
+															</div>
+															<div class="labelApply">
+																Apply
+															</div>
+															<div class="labelCrateSearched">
+																"<span></span>" (create new)
+															</div>
+														</div>
+                                                    </button>
+
+                                                    <div class="divider-vertical"></div>
+
+                                                    <button type="button" class="btn btn-icon" aria-label="more">
+                                                        <i class="icon icon-dots-vertical"></i>
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-auto">
+
+                                        <div class="row no-gutters align-items-center">
+											<button type="button" class="btn btn-icon" id="refresh-mail">
+                                                <i class="icon icon-refresh"></i>
+                                            </button>
+                                            <span class="page-info px-2 d-none d-sm-block page-counter">1 - 100 of 980</span>
+                                            <button type="button" class="btn btn-icon prev-mail-page">
+                                                <i class="icon icon-chevron-left"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-icon next-mail-page">
+                                                <i class="icon icon-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- / CONTENT TOOLBAR -->
+                                <div class="page-content custom-scrollbar">
+                                    <div class="thread-list w-100">
+										
+                                    </div>
+                                </div>
+
+                                <!-- / CONTENT -->
+                            </div>
+                        </div>
+                    </section>
+					
+					<!-- MAIL PAGE -->
+				
+					
+					
+					<!-- CONTACTS PAGE -->
+					
+						<section id="contacts" class="page-layout carded left-sidebar">
+							
+							<aside class="page-sidebar p-6" data-fuse-bar="contacts-sidebar" data-fuse-bar-media-step="md">
+								<div class="page-sidebar-card">
+									<!-- SIDENAV HEADER -->
+									<div class="header p-4">
+
+										<!-- USER -->
+										<div class="row no-gutters align-items-center">
+											<img class="avatar mr-4" alt="John Doe" src="../assets/images/avatars/profile.jpg">
+											<span class="font-weight-bold">John Doe</span>
+										</div>
+										<!-- / USER -->
+
+									</div>
+									<!-- / SIDENAV HEADER -->
+
+									<div class="divider"></div>
+
+									<!-- SIDENAV CONTENT -->
+									<div class="content">
+
+										<ul class="nav flex-column">
+
+											<li class="nav-item">
+												<a class="nav-link ripple active" href="#">
+													<span>All contacts</span>
+												</a>
+											</li>
+
+											<li class="nav-item">
+												<a class="nav-link ripple" href="#">
+													<span>Frequently contacted</span>
+												</a>
+											</li>
+
+											<li class="nav-item">
+												<a class="nav-link ripple" href="#">
+													<span>Starred contacts</span>
+												</a>
+											</li>
+
+											<div class="divider"></div>
+
+											<li class="subheader">Groups</li>
+
+											<li class="nav-item">
+												<a class="nav-link ripple" href="#">
+													<span class="pl-2">Friends</span>
+												</a>
+											</li>
+
+											<li class="nav-item">
+												<a class="nav-link ripple" href="#">
+													<span class="pl-2">Clients</span>
+												</a>
+											</li>
+
+											<li class="nav-item">
+												<a class="nav-link ripple" href="#">
+													<span class="pl-2">Recent Workers</span>
+												</a>
+											</li>
+
+											<li class="nav-item">
+												<a class="nav-link ripple" href="#">
+													<span class="pl-2">New Group</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<!-- / SIDENAV CONTENT -->
+								</div>
+							</aside>
+							
+							<div class="page-content-wrapper">
+							<div class="content custom-scrollbar ps ps--active-y">
+								<div class="page-header bg-primary text-auto row no-gutters align-items-center justify-content-between p-4 p-sm-6">
+
+									<div class="col">
+
+										<div class="row no-gutters align-items-center flex-nowrap">
+
+											<button type="button" class="sidebar-toggle-button btn btn-icon d-inline-block d-lg-none mr-2" data-fuse-bar-toggle="contacts-sidebar">
+												<i class="icon icon-menu"></i>
+											</button>
+
+											<!-- APP TITLE -->
+											<div class="logo row no-gutters align-items-center flex-nowrap">
+												<span class="logo-icon mr-4">
+													<i class="icon-account-box s-6"></i>
+												</span>
+												<span class="logo-text h4">Contacts</span>
+											</div>
+										</div>
+										<!-- / APP TITLE -->
+									</div>
+
+									<!-- SEARCH -->
+									<div class="col search-wrapper">
+
+										<div class="input-group">
+
+											<span class="input-group-btn">
+
+												<button type="button" class="btn btn-icon">
+													<i class="icon icon-magnify"></i>
+												</button>
+
+											</span>
+
+											<input id="contacts-search-input" type="text" class="form-control" placeholder="Search for anyone" aria-label="Search for anyone" />
+
+										</div>
+									</div>
+									<!-- / SEARCH -->
+								</div>
+								<!-- / HEADER -->
+								
+								<!-- CONTENT -->
+								<div class="page-content-card"> <!-- class="page-content p-4 p-sm-6" -->
+									<!-- CONTACT LIST -->
+									<div class="contacts-list card">
+
+										<!-- CONTACT LIST HEADER -->
+										<div class="contacts-list-header p-4">
+
+											<div class="row no-gutters align-items-center justify-content-between">
+
+												<div class="list-title text-muted">
+													All contacts (25)
+												</div>
+
+												<button type="button" class="btn btn-icon">
+													<i class="icon icon-sort-alphabetical"></i>
+												</button>
+											</div>
+
+										</div>
+										<!-- / CONTACT LIST HEADER -->
+		
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Abbott" src="../assets/images/avatars/Abbott.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Abbott Keitch</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												abbott@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0175
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Digital Archivist
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Saois
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Arnold" src="../assets/images/avatars/Arnold.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Arnold Matlock</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												arnold@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0141
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Graphic Artist
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Laotcone
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Barrera" src="../assets/images/avatars/Barrera.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Barrera Bradbury</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												barrera@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0196
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Graphic Designer
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Unizim
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Blair" src="../assets/images/avatars/Blair.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Blair Strangeway</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												blair@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0118
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Visual Designer
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Conedubdax
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Boyle" src="../assets/images/avatars/Boyle.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Boyle Winters</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												boyle@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0177
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Catalogue Illustrator
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Newo
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Christy" src="../assets/images/avatars/Christy.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Christy Camacho</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												christy@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0136
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												3D Animator
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												uniway
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Copeland" src="../assets/images/avatars/Copeland.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Copeland Redcliff</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												copeland@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0107
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Multimedia Artist
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Tempron
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Estes" src="../assets/images/avatars/Estes.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Estes Stevens</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												estes@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0113
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Special Effects Artist
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												nam-dex
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Harper" src="../assets/images/avatars/Harper.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Harper MacGuffin</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												harper@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0173
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Application Developer
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												runcane
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Helen" src="../assets/images/avatars/Helen.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Helen Sheridan</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												helen@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0163
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Content Developer
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Subhow
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Henderson" src="../assets/images/avatars/Henderson.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Henderson Cambias</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												henderson@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0151
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Web Designer
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Howcom
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Josefina" src="../assets/images/avatars/Josefina.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Josefina Lakefield</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												josefina@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0160
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Web Developer
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Gecko
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Katina" src="../assets/images/avatars/Katina.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Katina Bletchley</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												katina@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0186
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Software Designer
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Lexicom
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Lily" src="../assets/images/avatars/Lily.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Lily Peasegood</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												lily@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0115
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Software Specialist
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												zooflex
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Mai" src="../assets/images/avatars/Mai.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Mai Nox</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												mai@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0199
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Software Engineer
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												quadzone
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Nancy" src="../assets/images/avatars/Nancy.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Nancy Jaggers</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												nancy@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0120
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Software Architect
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Opetamnix
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Nora" src="../assets/images/avatars/Nora.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Nora Franklin</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												nora@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0172
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Database Coordinator
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Saoway
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Odessa" src="../assets/images/avatars/Odessa.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Odessa Goodman</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												odessa@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0190
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Database Administration Manager
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												transace
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Reyna" src="../assets/images/avatars/Reyna.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Reyna Preece</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												reyna@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0116
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Data Processing Planner
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Dingex
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Shauna" src="../assets/images/avatars/Shauna.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Shauna Atherton</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												shauna@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0159
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Art Director
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Vivaflex
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Shepard" src="../assets/images/avatars/Shepard.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Shepard Rosco</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												shepard@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0173
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Magazine Designer
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Goldenla
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Tillman" src="../assets/images/avatars/Tillman.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Tillman Lee</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												tillman@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0183
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												News Photographer
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												K-techno
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Trevino" src="../assets/images/avatars/Trevino.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Trevino Bush</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												trevino@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0138
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Photojournalist
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Dalthex
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Tyson" src="../assets/images/avatars/Tyson.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Tyson Marshall</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												tyson@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0146
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Manuscript Editor
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												Geocon
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+										<!-- CONTACT ITEM -->
+										<div class="contact-item ripple row no-gutters align-items-center py-2 px-3 py-sm-4 px-sm-6">
+
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" />
+												<span class="custom-control-indicator"></span>
+											</label>
+
+											<img class="avatar mx-4" alt="Velazquez" src="../assets/images/avatars/Velazquez.jpg" />
+
+											<div class="col text-truncate font-weight-bold">Velazquez Smethley</div>
+
+											<div class="col email text-truncate px-1 d-none d-xl-flex">
+												velezquez@withinpixels.com
+											</div>
+
+											<div class="col phone text-truncate px-1 d-none d-xl-flex">
+												&#43;1-202-555-0146
+											</div>
+
+											<div class="col job-title text-truncate px-1 d-none d-sm-flex">
+												Publications Editor
+											</div>
+
+											<div class="col company text-truncate px-1 d-none d-sm-flex">
+												ranex
+											</div>
+
+											<div class="col-auto actions">
+
+												<div class="row no-gutters">
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon-star"></i>
+													</button>
+
+													<button type="button" class="btn btn-icon">
+														<i class="icon icon-dots-vertical"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- CONTACT ITEM -->
+
+									</div>
+									<!-- / CONTACT LIST -->
+								</div>
+								</div>
+								<!-- / CONTENT -->
+							</div>
+						</section>
+					<!-- READ EMAIL -->
+					
+					
+                </div>
+            </div>
+        </div>
+    </main>
+	
+	<!-- MODALS -->
+	<div class="modal fade" id="composeModal" tabindex="-1" role="dialog" aria-labelledby="composeModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="composeModalLabel">New message</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group mb-4">
+							<input type="text" class="form-control" data-validate="message" data-validate_name="subject" id="subject"/>
+							<label for="subject">Subject:</label>
+						</div>
+						<div class="form-group mb-4">
+							<input type="text" class="form-control" data-validate="email" data-validate_name="to" id="recipient-name"/>
+							<label for="recipient-name">To:</label>
+						</div>
+						<div class="form-group mb-4">
+							<input type="text" class="form-control" data-validate="email-optional" data-validate_name="cc" id="cc-name"/>
+							<label for="cc-name">Cc:</label>
+						</div>
+						<div class="form-group mb-4">
+							<input type="text" class="form-control" data-validate="email-optional" data-validate_name="bcc" id="bcc-name"/>
+							<label for="bcc-name">Bcc:</label>
+						</div>
+						<div class="form-group">
+							<label for="message-text" class="form-control-label" >Message:</label>
+							<!-- <textarea class="form-control" id="message-text" data-validate="message" data-validate_name="message" ></textarea> -->
+							<div class="form-control composeMailArea" data-validate="message" data-validate_name="message"></div>
+							<div class="bottom-textarea">
+								<span class="a-span">A</span>
+								<span class="sep-border"></span>
+								<i class="icon-paperclip has-attachment s-4"><input type="file" class="attachmentCompose"/></i>
+								<i class="icon-file-image-box has-attachment s-4"><input type="file" class="attachmentCompose"/></i>
+								<i class="icon-emoticon has-attachment s-4"></i>
+								
+								<i class="icon-trash has-attachment s-4 trash-can discardDraft" ></i>
+								
+							</div>
+						</div>
+					</form>
+					<div class="attachList"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" id="send-mail" class="btn btn-primary">Send message</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="viewModalModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<iframe id="viewFrame">
+						
+					</iframe>
+					<img id="viewImage"/>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="newLabelModal" tabindex="-1" role="dialog" aria-labelledby="newLabelModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">New label</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group mb-4">
+						<input type="text" class="form-control" id="labelName"/>
+						<label for="subject">Label name:</label>
+					</div>
+					<div class="labelExistsError">The label name you have chosen already exists. Please try another name.</div>
+					<div class="labelExistsErrorSys">Sorry, you can't create a label named <span></span> (it's a reserved system label). Please try another name.</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+					<button type="button" id="saveLabel" class="btn btn-primary fuse-ripple-ready">Create</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="newBoxModal" tabindex="-1" role="dialog" aria-labelledby="newBoxModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">New Mailbox</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group mb-4">
+						<input type="text" class="form-control" id="boxName"/>
+						<label for="subject">Mailbox name:</label>
+					</div>
+					<div class="MailboxExistsError">The mailbox name you have chosen already exists. Please try another name.</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+					<button type="button" id="saveMailbox" class="btn btn-secondary fuse-ripple-ready">Create</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Are you sure</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body toTrash">
+					Delete(move to trash) checked mails?
+				</div>
+				<div class="modal-body permanently d-none">
+					Permanently delete checked mails?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary fuse-ripple-ready" data-dismiss="modal">Cancel</button>
+					<button type="button" id="moveToTrash" class="btn btn-secondary">Confirm</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MODALS -->
+	
+	<!-- Main JS -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/validate.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+</body>
+
+</html>
